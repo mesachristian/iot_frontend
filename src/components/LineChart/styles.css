@@ -1,0 +1,55 @@
+:root{
+    --chart-margin : 50px;
+    --chart-height : 500px;
+}
+
+.chart-title-container{
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-color-dark-blue-light);
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chart-container{
+    margin: 30px var(--chart-margin);
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-color: var(--primary-color-dark-blue-dark);
+
+}
+
+.download-chart-button-container{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.download-chart-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    height: 60%;
+    width: 200px;
+    background-color: var(--primary-color-pink);
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    color: #f3f3f3;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.download-chart-button:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+}

@@ -1,0 +1,20 @@
+.dashboard{
+    width: 100%;
+    height: 100%;
+}
+
+.title-ll-container{
+    width: 100%;
+    height: 80px;
+    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.title-ll{
+    margin-left: 30px;
+    font-size: 1.8em;
+    font-weight: 700;
+}

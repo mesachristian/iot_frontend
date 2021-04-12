@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React from "react";
+import { useAuth } from "context/AuthContext";
+
+// COMPONENTS
+import UserAuth from './components/UserAuth';
+import UserNotAuth from './components/UserNotAuth';
+
+// STYLES
 import './App.css';
 
+import {AuthProvider} from 'context/AuthContext';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+  return(
+    <AuthProvider>
+      <Content />
+    </AuthProvider>
   );
 }
 
+function Content(){
+  const {currentUser} = useAuth();
+  return currentUser ? <UserAuth/> : <UserNotAuth/>;
+}
+
 export default App;
+
+
+// ICONS : https://undraw.co/search
+// COLORS : https://colorsinspo.com/

@@ -1,0 +1,173 @@
+:root{
+	--principal : #20941c;
+	--principal-b : #40c43c;
+	--principal-b-b : #76ee71;
+}
+
+.wave-bg{
+	position: fixed;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+.login-page-container{
+	width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap :7rem;
+    padding: 0 2rem;
+}
+
+.home-logo{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.form-content{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+.form-title{
+	margin: 15px 0;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 2.9rem;
+}
+
+.input-field-login{
+	margin-top: 0;
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.input-field-login > .icon{
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-field-login > .icon > i{
+	transition: .3s;
+}
+
+.input-field-login > .container{
+    position: relative;
+	height: 45px;
+}
+
+.input-field-login > .container > .title{
+	position: absolute;
+	left: 10px;
+	top: -15%;
+	transform: translateY(70%);
+	color: #999;
+	font-size: 18px;
+	transition: .3s;
+}
+
+.input-field-login > .container > .input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+
+.input-field-login.focus > .icon > i{
+	color: var(--principal);
+}
+
+.input-field-login.focus > .container > .title{
+	top: -23px;
+	font-size: 15px;
+}
+
+.input-field-login:before, .input-field-login:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: var(--principal);
+	transition: .4s;
+}
+
+.input-field-login:before{
+	right: 50%;
+}
+
+.input-field-login:after{
+	left: 50%;
+}
+
+.input-field-login.focus:before, .input-field-login.focus:after{
+	width: 50%;
+}
+
+.input-field-login.wrong > .icon > i{
+	color: rgb(173, 44, 44);
+}
+
+.input-field-login.wrong{
+	border-bottom: 2px solid rgb(173, 44, 44);
+}
+
+.input-field-login.wrong > .container > .title{
+	color: rgb(173, 44, 44);
+}
+
+.forgot-btn {
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	transition: .3s;
+}
+
+.forgot-btn:hover{
+	color: var(--principal);
+}
+
+.submit-btn{
+	display: block;
+	width: 90%;
+	-ms-transform: translate(6%, 0%);
+    transform: translate(6%, 0%);
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, var(--principal), var(--principal-b), var(--principal-b-b));
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.submit-btn:hover{
+	background-position: right;
+}

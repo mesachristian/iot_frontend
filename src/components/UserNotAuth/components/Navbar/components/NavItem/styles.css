@@ -1,0 +1,33 @@
+.nav-item-not-auth {
+    height: 100%;
+    float: right;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: 700;
+}
+  
+.nav-item-body-not-auth {
+    margin-top: 1px;
+    height: 100%;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.nav-item-body-not-auth:hover:not(.nav-item-active-not-auth) {
+    color: var(--primary-color-light-blue);
+}
+  
+.nav-item-active-not-auth {
+    margin-top: 1px;
+    height: 100%;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--primary-color-light-blue);
+}

@@ -1,0 +1,21 @@
+.navbar-not-auth {
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 100px;
+}
+
+.navbar-not-auth-body {
+    float: right;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar-not-auth-items {
+    float: right;
+    height: 60px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}

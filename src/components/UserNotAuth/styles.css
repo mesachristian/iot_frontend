@@ -1,0 +1,11 @@
+.user-not-auth{
+    background-color: var(--primary-color-gray);
+}
+
+.user-not-auth-body{
+    margin-top: 60px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
